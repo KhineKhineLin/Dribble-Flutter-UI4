@@ -1,3 +1,4 @@
+import 'package:dribbble_flutter_ui4/music_player_app/play_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -47,16 +48,20 @@ class _MainPageState extends State<MainPage> {
           Positioned(
               right: 48,
               top: MediaQuery.of(context).size.height / 2.4,
-              child: Container(
-                height: 84,
-                width: 84,
-                decoration:
-                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                child: Center(
-                  child: Icon(
-                    Icons.play_arrow,
-                    color: backgroundColor,
-                    size: 48,
+              child: GestureDetector(
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const PlayPage())),
+                child: Container(
+                  height: 84,
+                  width: 84,
+                  decoration: const BoxDecoration(
+                      color: Colors.white, shape: BoxShape.circle),
+                  child: Center(
+                    child: Icon(
+                      Icons.play_arrow,
+                      color: backgroundColor,
+                      size: 48,
+                    ),
                   ),
                 ),
               )),
