@@ -1,3 +1,5 @@
+import 'dart:math';
+import 'dart:math' as math;
 import 'package:dribbble_flutter_ui4/music_player_app/music_player_main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,8 +12,23 @@ class PlayPage extends StatefulWidget {
 }
 
 class _PlayPageState extends State<PlayPage> {
+  List<int> soundBars = [];
+  double barWidth = 5.0;
+  double soundPosition = 0.0;
+  double nextSoundPosition = 140.0;
+  Random r = Random();
+  @override
+  void initState() {
+    super.initState();
+
+    for (int i = 0; i < 70; i++) {
+      soundBars.add(r.nextInt(52));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    int i = 0;
     return Scaffold(
       backgroundColor: Colors.yellow,
       body: Stack(
@@ -51,6 +68,14 @@ class _PlayPageState extends State<PlayPage> {
                 ),
               )),
           Positioned(
+              left: 24,
+              right: 24,
+              top: 100,
+              child: CustomPaint(
+                size: Size(300, 300),
+                painter: ArcPainter(),
+              )),
+          Positioned(
               left: 16,
               right: 16,
               top: 410,
@@ -72,11 +97,25 @@ class _PlayPageState extends State<PlayPage> {
                       style: GoogleFonts.montserrat(),
                     ),
                     SizedBox(
-                      height: 52,
+                      height: 24,
                     ),
                     Container(
-                      height: 48,
-                      color: Colors.red,
+                      height: 52,
+                      child: Row(
+                        children: soundBars.map((h) {
+                          Color color = i >= soundPosition / barWidth &&
+                                  i <= nextSoundPosition / barWidth
+                              ? backgroundColor
+                              : Colors.grey;
+                          i++;
+                          return Container(
+                            margin: EdgeInsets.only(right: 0.6),
+                            color: color,
+                            height: h.toDouble(),
+                            width: 4,
+                          );
+                        }).toList(),
+                      ),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -103,7 +142,17 @@ class _PlayPageState extends State<PlayPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.refresh),
+                  IconButton(
+                    padding: EdgeInsets.zero,
+                    icon: Icon(Icons.refresh),
+                    onPressed: () {
+                      soundBars.clear();
+                      for (int i = 0; i < 70; i++) {
+                        soundBars.add(r.nextInt(52));
+                      }
+                      setState(() {});
+                    },
+                  ),
                   Icon(Icons.skip_previous),
                   Card(
                       color: backgroundColor,
@@ -127,5 +176,25 @@ class _PlayPageState extends State<PlayPage> {
         ],
       ),
     );
+  }
+}
+
+class ArcPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Rect.fromLTRB(50, 100, 150, 200);
+    final startAngle = -math.pi;
+    final sweepAngle = -math.pi;
+    final useCenter = false;
+    final paint = Paint()
+      ..color = Colors.black
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2;
+    canvas.drawArc(rect, startAngle, sweepAngle, useCenter, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    throw UnimplementedError();
   }
 }
