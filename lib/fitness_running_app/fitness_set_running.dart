@@ -163,20 +163,24 @@ class _MainPageState extends State<MainPage> {
             SizedBox(
               height: 64,
             ),
-            Container(
-              height: 48,
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  color: Colors.tealAccent,
-                  borderRadius: BorderRadius.circular(6)),
-              child: Center(
-                child: Text(
-                  'Run',
-                  style: TextStyle(
-                      color: Color(0xff181E27),
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
+            InkWell(
+              onTap: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => HomePage())),
+              child: Container(
+                height: 48,
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                    color: Colors.tealAccent,
+                    borderRadius: BorderRadius.circular(6)),
+                child: Center(
+                  child: Text(
+                    'Run',
+                    style: TextStyle(
+                        color: Color(0xff181E27),
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             ),
