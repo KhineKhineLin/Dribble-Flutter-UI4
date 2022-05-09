@@ -1,3 +1,4 @@
+import 'package:dribbble_flutter_ui4/fitness_running_app/home_page.dart';
 import 'package:flutter/material.dart';
 
 class FitnessSetRunningApp extends StatelessWidget {
@@ -8,7 +9,7 @@ class FitnessSetRunningApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(accentColor: Colors.tealAccent),
-      home: const MainPage(),
+      home: const HomePage(),
     );
   }
 }
