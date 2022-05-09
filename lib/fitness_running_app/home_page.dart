@@ -204,6 +204,220 @@ class _HomePageState extends State<HomePage> {
                           ),
                         )
                       ]),
+                    ),
+                    SizedBox(
+                      height: 64,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: Text(
+                        'Saved Runs',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18),
+                      ),
+                    ),
+                    Container(
+                      height: 264,
+                      child: GridView.count(
+                        padding: EdgeInsets.only(top: 16),
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 16,
+                        crossAxisSpacing: 16,
+                        childAspectRatio: 0.6,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 16, top: 9, right: 16, bottom: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                    color: Colors.tealAccent, width: 0.5)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Long\nRun',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1.5),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Distance',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '15 mil',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Pace',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '7:30',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 16, top: 9, right: 16, bottom: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                    color: Colors.tealAccent, width: 0.5)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Short\nRun',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1.5),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Distance',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '4 mil',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 16, top: 9, right: 16, bottom: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                    color: Colors.tealAccent, width: 0.5)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Time\nRun',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1.5),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Distance',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '18 mil',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Pace',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '4:30',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 16, top: 9, right: 16, bottom: 10),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                    color: Colors.tealAccent, width: 0.5)),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Speed\nRun',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1.5),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Speed',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '2.8m/h',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Spacer(),
+                                Text(
+                                  'Pace',
+                                  style: TextStyle(
+                                      color: Colors.tealAccent.withOpacity(0.5),
+                                      letterSpacing: 1.5,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '6:30',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 21,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
