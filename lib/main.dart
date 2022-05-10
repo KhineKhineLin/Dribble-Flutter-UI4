@@ -1,5 +1,5 @@
-import 'package:dribbble_flutter_ui4/fitness_running_app/fitness_set_running.dart';
+import 'package:dribbble_flutter_ui4/fitness_activity_tracker_app/fitness_activity_tracker.dart';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const FitnessSetRunningApp());
+void main() => runApp(const FitnessActivityTracker());
