@@ -1,3 +1,4 @@
+import 'package:dribbble_flutter_ui4/handmade_mobile_app/best_sellers.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -29,7 +30,14 @@ class HandMadeMainPage extends StatefulWidget {
 }
 
 class _HandMadeMainPageState extends State<HandMadeMainPage> {
-  final _pageController = PageController(viewportFraction: 1);
+  late PageController _pageController;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(viewportFraction: 1);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,6 +81,7 @@ class _HandMadeMainPageState extends State<HandMadeMainPage> {
               right: 16,
               top: MediaQuery.of(context).size.height / 1.9,
               child: Container(
+                height: 38,
                 child: Center(
                   child: SmoothPageIndicator(
                     controller: _pageController,
@@ -136,20 +145,24 @@ class _HandMadeMainPageState extends State<HandMadeMainPage> {
                                   )),
                               Expanded(
                                   flex: 8,
-                                  child: Container(
-                                      decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                              topRight: Radius.circular(16)),
-                                          color: Color(0xff8c6e6b)),
-                                      child: Center(
-                                        child: Text(
-                                          'see details',
-                                          style: GoogleFonts.merriweather(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w300,
-                                              color: Colors.white),
-                                        ),
-                                      )))
+                                  child: GestureDetector(
+                                    onTap: () =>
+                                        Navigator.of(context).pushNamed('/'),
+                                    child: Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                                topRight: Radius.circular(16)),
+                                            color: Color(0xff8c6e6b)),
+                                        child: Center(
+                                          child: Text(
+                                            'see details',
+                                            style: GoogleFonts.merriweather(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white),
+                                          ),
+                                        )),
+                                  ))
                             ],
                           ),
                         )
@@ -263,9 +276,13 @@ class _HandMadeHomePageState extends State<HandMadeHomePage> {
                                     color: Colors.white,
                                     letterSpacing: 4),
                               ),
-                              Icon(
-                                Icons.arrow_forward,
-                                color: Colors.white,
+                              GestureDetector(
+                                onTap: () =>
+                                    Navigator.of(context).pushNamed('/home'),
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.white,
+                                ),
                               )
                             ],
                           )
@@ -314,6 +331,140 @@ class _HandMadeHomePageState extends State<HandMadeHomePage> {
                         dotHeight: 10,
                         activeDotColor: primaryColor,
                         dotColor: secondaryColor),
+                  ),
+                ),
+              )),
+          Positioned(
+              left: 24,
+              right: 0,
+              top: MediaQuery.of(context).size.height / 1.85,
+              child: Container(
+                height: MediaQuery.of(context).size.height / 2,
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Best Sellers',
+                          style: GoogleFonts.merriweather(
+                              fontSize: 22, letterSpacing: 2)),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      Container(
+                          height: 180,
+                          child: ListView.builder(
+                              itemCount: bestSellers.length,
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 120,
+                                  margin: EdgeInsets.only(right: 16),
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                          flex: 6,
+                                          child: Container(
+                                            height: double.infinity,
+                                            width: double.infinity,
+                                            decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                    image: NetworkImage(
+                                                        '${bestSellers[index].img}'),
+                                                    fit: BoxFit.cover)),
+                                          )),
+                                      Expanded(
+                                          flex: 3,
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(
+                                                  flex: 1,
+                                                  child: Align(
+                                                    alignment:
+                                                        Alignment.centerLeft,
+                                                    child: Text(
+                                                      '${bestSellers[index].title}',
+                                                      style: TextStyle(
+                                                          fontSize: 13,
+                                                          color: primaryColor),
+                                                    ),
+                                                  )),
+                                              Expanded(
+                                                  flex: 1,
+                                                  child: Row(
+                                                    children: [
+                                                      Expanded(
+                                                        flex: 3,
+                                                        child: Text(
+                                                          '\$${bestSellers[index].price}',
+                                                          style: TextStyle(
+                                                              fontSize: 16),
+                                                        ),
+                                                      ),
+                                                      Expanded(
+                                                          flex: 6,
+                                                          child: bestSellers[
+                                                                      index]
+                                                                  .freeDelivery
+                                                              ? Container(
+                                                                  margin: EdgeInsets
+                                                                      .symmetric(
+                                                                          vertical:
+                                                                              3),
+                                                                  decoration: BoxDecoration(
+                                                                      color: Colors
+                                                                          .white,
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              3)),
+                                                                  child: Center(
+                                                                    child: Text(
+                                                                      'Free delivery',
+                                                                      style: TextStyle(
+                                                                          fontSize:
+                                                                              12,
+                                                                          color:
+                                                                              primaryColor),
+                                                                    ),
+                                                                  ),
+                                                                )
+                                                              : Container())
+                                                    ],
+                                                  ))
+                                            ],
+                                          ))
+                                    ],
+                                  ),
+                                );
+                              })),
+                      SizedBox(
+                        height: 24,
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: MediaQuery.of(context).size.height / 3,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('New Arrivals',
+                                style: GoogleFonts.merriweather(
+                                    fontSize: 22, letterSpacing: 2)),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              height: 150,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          'https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg'),
+                                      fit: BoxFit.cover)),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ))
