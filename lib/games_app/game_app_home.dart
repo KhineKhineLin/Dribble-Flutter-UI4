@@ -15,6 +15,15 @@ class _GameAppHomeState extends State<GameAppHome>
   late Animation<double> _animation;
   int _tabIndex = 0;
   double angle = 0.0;
+  List<String> userImage = [
+    'https://lh6.googleusercontent.com/_9ONrJhHZlzqpTZEoC1M7G6OvEqJw6h_PmWrGQ-623EKyfGa2QUtr7dbDKMRydadk3_cr24_Tk2Fc-D95p8bV0MhHt6qJg6eDPs5b952wCP7H7QB21s0W7VZQd6K6ZQVYNdnk69Y',
+    'https://www.freeiconspng.com/thumbs/cartoon-png/mouse-cartoon-png-21.png',
+    'https://www.pngmart.com/files/5/Cartoon-PNG-HD.png',
+    'https://static.wikia.nocookie.net/johnnybravo/images/b/bb/Johnnyb001.gif/revision/latest?cb=20190421193227',
+    'https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Speedy_Gonzales.svg/640px-Speedy_Gonzales.svg.png',
+    'https://wallpaperaccess.com/full/5188641.png',
+    'https://lh3.googleusercontent.com/dtgI9RAeDPSX_aoODALRtTs-mGduBvOU9UYrSEYdbtvROeBNJ7AGAd5pD1RTB4i3FgSONq7KeVceJnu0byTstldZL0vGVXwdo1aF7HXqz79pOPKZhv9RN8QkOeNSjxEwMc7JipOZ',
+  ];
   @override
   void initState() {
     // TODO: implement initState
@@ -369,7 +378,63 @@ class _GameAppHomeState extends State<GameAppHome>
                               bottom: 0,
                               child: Container(
                                 width: 84,
-                                child: Placeholder(),
+                                child: RotatedBox(
+                                  quarterTurns: -1,
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.ac_unit,
+                                                size: 12,
+                                              ),
+                                              Text('Global distribution'),
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Container(
+                                            height: 4,
+                                            width: 4,
+                                            decoration: BoxDecoration(
+                                                color: Colors.black),
+                                          )
+                                        ],
+                                      ),
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.ac_unit,
+                                                size: 12,
+                                              ),
+                                              Text('Multi-language'),
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Container(
+                                            height: 4,
+                                            width: 4,
+                                            decoration: BoxDecoration(
+                                                color: Colors.black),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               )),
                           Positioned(
                               top: 0,
@@ -401,7 +466,37 @@ class _GameAppHomeState extends State<GameAppHome>
               bottom: 0,
               child: Container(
                 height: 120,
-                decoration: BoxDecoration(color: Colors.red),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            'POPULAR ANOTHER',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        )),
+                    Expanded(
+                        flex: 6,
+                        child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: userImage.length,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 64,
+                                margin: EdgeInsets.symmetric(
+                                    vertical: 16, horizontal: 8),
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: NetworkImage(userImage[index]),
+                                        fit: BoxFit.cover),
+                                    borderRadius: BorderRadius.circular(16)),
+                              );
+                            }))
+                  ],
+                ),
               ))
         ],
       ),
