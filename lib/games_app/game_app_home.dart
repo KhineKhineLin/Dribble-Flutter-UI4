@@ -1,5 +1,6 @@
 import 'package:dribbble_flutter_ui4/main.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class GameAppHome extends StatefulWidget {
   const GameAppHome({Key? key}) : super(key: key);
@@ -332,7 +333,68 @@ class _GameAppHomeState extends State<GameAppHome>
                 ),
               )),
           Positioned(
-              top: 150, left: 0, right: 0, bottom: 120, child: Placeholder()),
+              top: 178,
+              left: 0,
+              right: 0,
+              bottom: 120,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                      flex: 2,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Recently popular',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                            Text(
+                              'TOP GAMES',
+                              style: GoogleFonts.roboto(
+                                  fontWeight: FontWeight.bold, fontSize: 26),
+                            )
+                          ],
+                        ),
+                      )),
+                  Expanded(
+                      flex: 9,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                              top: 0,
+                              left: 0,
+                              bottom: 0,
+                              child: Container(
+                                width: 84,
+                                child: Placeholder(),
+                              )),
+                          Positioned(
+                              top: 0,
+                              left: 100,
+                              bottom: 0,
+                              right: 0,
+                              child: Container(
+                                width: 84,
+                                child: ListView.builder(
+                                  itemCount: 5,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 240,
+                                      margin: EdgeInsets.all(16),
+                                      decoration:
+                                          BoxDecoration(color: Colors.pink),
+                                    );
+                                  },
+                                ),
+                              ))
+                        ],
+                      ))
+                ],
+              )),
           Positioned(
               left: 0,
               right: 0,
