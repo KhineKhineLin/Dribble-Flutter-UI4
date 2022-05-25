@@ -11,6 +11,8 @@ class GameAppHome extends StatefulWidget {
 
 class _GameAppHomeState extends State<GameAppHome>
     with TickerProviderStateMixin {
+  ScrollController _scrollController = ScrollController();
+  PageController _pageController = PageController(viewportFraction: 0.8);
   late AnimationController _animationController;
   late Animation<double> _animation;
   int _tabIndex = 0;
@@ -24,6 +26,8 @@ class _GameAppHomeState extends State<GameAppHome>
     'https://wallpaperaccess.com/full/5188641.png',
     'https://lh3.googleusercontent.com/dtgI9RAeDPSX_aoODALRtTs-mGduBvOU9UYrSEYdbtvROeBNJ7AGAd5pD1RTB4i3FgSONq7KeVceJnu0byTstldZL0vGVXwdo1aF7HXqz79pOPKZhv9RN8QkOeNSjxEwMc7JipOZ',
   ];
+  EdgeInsetsGeometry _edgeInsetsGeometry =
+      EdgeInsets.only(right: 16, bottom: 16, top: 16);
   @override
   void initState() {
     // TODO: implement initState
@@ -46,11 +50,25 @@ class _GameAppHomeState extends State<GameAppHome>
           angle = 0.0;
         });
       });
+    // _scrollController..addListener(() {
+    //   print(_scrollController.offset);
+    // });
+    _pageController.addListener(() {
+      print(_pageController.page);
+      print(
+          '_pageController.position.maxScrollExtent : ${_pageController.position.maxScrollExtent}');
+      if (_pageController.page != 1.0 || _pageController.page != 0.0) {
+        _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 32, top: 32);
+      }
+      if (_pageController.page == 1.0 || _pageController.page == 0.0) {
+        _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 16, top: 16);
+      }
+      setState(() {});
+    });
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _animationController.dispose();
   }
@@ -438,24 +456,149 @@ class _GameAppHomeState extends State<GameAppHome>
                               )),
                           Positioned(
                               top: 0,
-                              left: 100,
+                              left: 84,
                               bottom: 0,
                               right: 0,
-                              child: Container(
-                                width: 84,
-                                child: ListView.builder(
-                                  itemCount: 5,
-                                  scrollDirection: Axis.horizontal,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 240,
-                                      margin: EdgeInsets.all(16),
-                                      decoration:
-                                          BoxDecoration(color: Colors.pink),
-                                    );
-                                  },
+                              child: IndexedStack(index: _tabIndex, children: [
+                                Container(
+                                  child: PageView.builder(
+                                      onPageChanged: (i) {
+                                        print('onPageChanged : $i');
+                                      },
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount: 2,
+                                      itemBuilder: ((context, index) {
+                                        return AnimatedContainer(
+                                          width: 260,
+                                          margin: _edgeInsetsGeometry,
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              image: DecorationImage(
+                                                  image: NetworkImage(
+                                                      userImage[index])),
+                                              borderRadius:
+                                                  BorderRadius.circular(16),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                    color: Colors
+                                                        .deepOrange.shade100,
+                                                    offset: Offset(4, 4),
+                                                    spreadRadius: 2,
+                                                    blurRadius: 4),
+                                                BoxShadow(
+                                                    color: Colors.blue.shade100,
+                                                    offset: Offset(-4, 4),
+                                                    spreadRadius: 2,
+                                                    blurRadius: 4),
+                                              ]),
+                                          duration: Duration(milliseconds: 100),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                  left: 0,
+                                                  right: 0,
+                                                  bottom: 0,
+                                                  child: Container(
+                                                    height: 120,
+                                                    padding: EdgeInsets.all(24),
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.blue
+                                                            .withOpacity(.7),
+                                                        borderRadius:
+                                                            BorderRadius.only(
+                                                                topLeft:
+                                                                    Radius
+                                                                        .circular(
+                                                                            48),
+                                                                bottomLeft:
+                                                                    Radius
+                                                                        .circular(
+                                                                            16),
+                                                                bottomRight: Radius
+                                                                    .circular(
+                                                                        16))),
+                                                    child: Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text(
+                                                          'Pokemon',
+                                                          style: TextStyle(
+                                                              fontSize: 18,
+                                                              color:
+                                                                  Colors.white),
+                                                        ),
+                                                        Text(
+                                                          'sword & shield',
+                                                          style: TextStyle(
+                                                              color:
+                                                                  Colors.white),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  )),
+                                              Positioned(
+                                                  right: 0,
+                                                  bottom: 0,
+                                                  child: Container(
+                                                    height: 64,
+                                                    width: 120,
+                                                    decoration: BoxDecoration(
+                                                        color: Colors.orange,
+                                                        gradient: LinearGradient(
+                                                            colors: [
+                                                              Colors.deepOrange
+                                                                  .shade300,
+                                                              Colors.deepOrange
+                                                            ],
+                                                            begin: Alignment
+                                                                .topCenter,
+                                                            end: Alignment
+                                                                .bottomCenter),
+                                                        borderRadius:
+                                                            BorderRadius.only(
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                        48),
+                                                                bottomRight: Radius
+                                                                    .circular(
+                                                                        16))),
+                                                    child: Center(
+                                                      child: Text(
+                                                        '\$116.99',
+                                                        style: TextStyle(
+                                                            color: Colors.white,
+                                                            fontSize: 20),
+                                                      ),
+                                                    ),
+                                                  ))
+                                            ],
+                                          ),
+                                        );
+                                      })),
                                 ),
-                              ))
+                                Container(
+                                  child: Center(
+                                    child: Text('Page 2'),
+                                  ),
+                                ),
+                                Container(
+                                  child: Center(
+                                    child: Text('Page 3'),
+                                  ),
+                                ),
+                                Container(
+                                  child: Center(
+                                    child: Text('Page 4'),
+                                  ),
+                                ),
+                                Container(
+                                  child: Center(
+                                    child: Text('Page 5'),
+                                  ),
+                                )
+                              ]))
                         ],
                       ))
                 ],
