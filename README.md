@@ -31,10 +31,12 @@
    <tr>
     <th>IoT Delivery Tracking</th>
     <th>Goals</th>
+    <th>Games</th>
   </tr>
    <tr>
     <td><img src="https://user-images.githubusercontent.com/56064504/169094848-11997893-526b-4e91-b43c-a66215c18e0d.jpg" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/169351824-dcc8c773-edb1-451b-8db0-150995e9f1e5.jpg" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/170356385-c97d30f5-41ef-4a3b-b5a0-d1fa8f0e4137.jpg" width=250 ></td>
   </tr>
 </table>
 
