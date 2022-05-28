@@ -40,6 +40,12 @@
     <td><img src="https://user-images.githubusercontent.com/56064504/170356385-c97d30f5-41ef-4a3b-b5a0-d1fa8f0e4137.jpg" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/170574900-d259b140-b671-457e-a1df-53c73ab4a0fb.jpg" width=250 ></td>
   </tr>
+   <tr>
+    <th>Exyte Mobile</th>
+  </tr>
+   <tr>
+    <td><img src="https://user-images.githubusercontent.com/56064504/170842225-867e9d95-219f-401e-b869-665ab139742b.gif" width=250 ></td>
+  </tr>
 </table>
 
 </body>
