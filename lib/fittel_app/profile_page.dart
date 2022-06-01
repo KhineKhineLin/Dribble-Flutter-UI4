@@ -396,7 +396,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 8,
                               ),
                               Text(
-                                'Meal plan',
+                                'Workout calender',
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
