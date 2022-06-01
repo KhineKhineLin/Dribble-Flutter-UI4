@@ -323,6 +323,181 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
+              ListView(
+                shrinkWrap: true,
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height / 5.5,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            child: Container(
+                          margin: EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                    color: Colors.deepPurpleAccent,
+                                    borderRadius: BorderRadius.circular(8)),
+                                child: Center(
+                                    child: Icon(
+                                  Icons.restaurant,
+                                  color: Colors.white,
+                                )),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                'Meal plan',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              )
+                            ],
+                          ),
+                        )),
+                        Expanded(
+                            child: Container(
+                          margin: EdgeInsets.only(left: 8),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                    color: Colors.orangeAccent,
+                                    borderRadius: BorderRadius.circular(8)),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.fitness_center,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                'Meal plan',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              )
+                            ],
+                          ),
+                        ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 12,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Row(
+                      children: [
+                        Icon(Icons.history),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'Workouts History',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(),
+                        Icon(Icons.keyboard_arrow_right)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 12,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Row(
+                      children: [
+                        Icon(Icons.history),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'Workouts History',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(),
+                        Icon(Icons.keyboard_arrow_right)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 12,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Row(
+                      children: [
+                        Icon(Icons.history),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'Workouts History',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(),
+                        Icon(Icons.keyboard_arrow_right)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 12,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16)),
+                    child: Row(
+                      children: [
+                        Icon(Icons.history),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'Workouts History',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(),
+                        Icon(Icons.keyboard_arrow_right)
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
