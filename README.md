@@ -44,11 +44,13 @@
     <th>Exyte Mobile</th>
     <th>Fittel</th>
     <th>Reminder</th>
+    <th>Traveler</th>
   </tr>
    <tr>
     <td><img src="https://user-images.githubusercontent.com/56064504/170842225-867e9d95-219f-401e-b869-665ab139742b.gif" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/171488164-c81d58aa-ac6e-4bff-9ec3-c2ee4314f863.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/171790815-bd0bc9da-eaaa-4444-9882-a08231b3bf50.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/172020596-0ae02670-b835-4fb6-bb28-c45467db74f1.png" width=250 ></td>
   </tr>
 </table>
 
