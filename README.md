@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,6 +49,12 @@
     <td><img src="https://user-images.githubusercontent.com/56064504/171488164-c81d58aa-ac6e-4bff-9ec3-c2ee4314f863.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/171790815-bd0bc9da-eaaa-4444-9882-a08231b3bf50.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/172020596-0ae02670-b835-4fb6-bb28-c45467db74f1.png" width=250 ></td>
+  </tr>
+   <tr>
+    <th>Watches</th>
+  </tr>
+   <tr>
+    <td><img src="https://user-images.githubusercontent.com/56064504/172050412-5d3bceb1-4946-40af-905b-a25d8c414b56.png" width=250 ></td>
   </tr>
 </table>
 
