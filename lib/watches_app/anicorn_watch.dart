@@ -98,7 +98,7 @@ class _DetailPageState extends State<DetailPage> {
                       height: 4,
                     ),
                     Text(
-                      '000'.toUpperCase(),
+                      '004'.toUpperCase(),
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
@@ -158,18 +158,269 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               )),
           Positioned(
-            left: 120,
-            top: 72,
-            child: Container(
-              width: 210,
-              height: 400,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage('https://cdn.tmobile.com/content/dam/t-mobile/en-p/internet-devices/apple/Apple-Watch-Series-7-45mm/Starlight-Aluminum-Starlight-Sport-Band/Apple-Watch-Series-7-45mm-Starlight-Aluminum-Starlight-Sport-Band-frontimage.png'),
-                  fit: BoxFit.fitHeight
-                )
-              ),
-            ))
+              left: 120,
+              top: 72,
+              child: Container(
+                width: 210,
+                height: 400,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            'https://cdn.tmobile.com/content/dam/t-mobile/en-p/internet-devices/apple/Apple-Watch-Series-7-45mm/Starlight-Aluminum-Starlight-Sport-Band/Apple-Watch-Series-7-45mm-Starlight-Aluminum-Starlight-Sport-Band-frontimage.png'),
+                        fit: BoxFit.fitHeight)),
+              )),
+          Positioned(
+              left: 24,
+              bottom: 16,
+              right: 0,
+              child: Container(
+                height: 270,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Rose Gold',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 28),
+                    ),
+                    Text(
+                      'Apple Watch Series 4',
+                      style: TextStyle(fontSize: 26, letterSpacing: 1.2),
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    SizedBox(
+                        width: 300,
+                        child: Text(
+                          'Apple Watch Series 4. Fundamentally redesigned and re-engineered to help you be even more active, healthy, and connected.',
+                          style: TextStyle(
+                              wordSpacing: 1.2,
+                              letterSpacing: 1.2,
+                              fontSize: 12),
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 16),
+                      child: Divider(
+                        color: Colors.black,
+                      ),
+                    ),
+                    Container(
+                      height: 81,
+                      margin: EdgeInsets.only(right: 16),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Row(
+                              children: [
+                                Expanded(
+                                    flex: 1,
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: Colors.orange,
+                                                  width: 2)),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.directions_run,
+                                              color: Colors.orange,
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'Movement',
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+                                                  letterSpacing: 1.3),
+                                            ),
+                                            SizedBox(
+                                              height: 4,
+                                            ),
+                                            Text(
+                                              '13m2',
+                                              style: TextStyle(fontSize: 7),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    )),
+                                Expanded(
+                                    flex: 1,
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                  color: Colors.red, width: 2)),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.data_usage,
+                                              color: Colors.red,
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'Accuracy',
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+                                                  letterSpacing: 1.3),
+                                            ),
+                                            Text(
+                                              '20+40 sec',
+                                              style: TextStyle(fontSize: 7),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ))
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                              child: Row(
+                            children: [
+                              Expanded(
+                                  flex: 1,
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 48,
+                                        width: 48,
+                                        decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                                color: Colors.lightBlueAccent,
+                                                width: 2)),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.whatshot,
+                                            color: Colors.lightBlueAccent,
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Resistance',
+                                            style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                letterSpacing: 1.3),
+                                          ),
+                                          SizedBox(
+                                            height: 4,
+                                          ),
+                                          Text(
+                                            '50 meters',
+                                            style: TextStyle(fontSize: 7),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  )),
+                              Expanded(
+                                  flex: 1,
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        height: 48,
+                                        width: 48,
+                                        decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                                color: Colors.indigoAccent,
+                                                width: 2)),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.tune,
+                                            color: Colors.indigoAccent,
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Function',
+                                            style: TextStyle(
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
+                                                letterSpacing: 1.3),
+                                          ),
+                                          SizedBox(
+                                            height: 4,
+                                          ),
+                                          Text(
+                                            'Hrs/min/sec',
+                                            style: TextStyle(fontSize: 7),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ))
+                            ],
+                          ))
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ))
         ],
       ),
     );
