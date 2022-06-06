@@ -141,6 +141,155 @@ class _DokoDetailPageState extends State<DokoDetailPage> {
                               color: appAccentColor,
                               letterSpacing: 1.5),
                         ),
+                      ),
+                      Text('1.4 Reading'),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Flexible(
+                            flex: 1,
+                            fit: FlexFit.loose,
+                            child: Container(
+                              margin: EdgeInsets.symmetric(vertical: 8),
+                              width: 3,
+                              height: 130,
+                              color: Colors.indigo[200],
+                            ),
+                          ),
+                          Flexible(
+                              fit: FlexFit.loose,
+                              flex: 20,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 16),
+                                child: Text(
+                                  'Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity.',
+                                  style: TextStyle(
+                                      color: Colors.indigo[200], fontSize: 13),
+                                ),
+                              ))
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(2),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.calendar_today,
+                              color: appAccentColor,
+                              size: 18,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: Text(
+                                '6 Days',
+                                style: TextStyle(color: appAccentColor),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 16,
+                            ),
+                            Icon(
+                              Icons.attach_money,
+                              size: 18,
+                              color: appAccentColor,
+                            ),
+                            Text(
+                              '1200\$ Per Person',
+                              style: TextStyle(
+                                  color: appAccentColor,
+                                  fontWeight: FontWeight.w600),
+                            )
+                          ],
+                        ),
+                      ),
+                      Text(
+                        'Mount Fuji',
+                        style: TextStyle(
+                            color: appAccentColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18),
+                      ),
+                      Text(
+                        'Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,”\n\n '
+                        'it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries.',
+                        style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w300,
+                            color: appAccentColor),
+                      ),
+                      Spacer(),
+                      Row(
+                        children: [
+                          Expanded(
+                            flex: 8,
+                            child: Card(
+                              elevation: 5,
+                              color: appAccentColor,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.thumb_up,
+                                      color: Colors.white,
+                                      size: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 4),
+                                      child: Text(
+                                        '543',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.chat_bubble_outline,
+                                      color: Colors.white,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 4),
+                                      child: Text(
+                                        '542',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.star_border,
+                                      color: Colors.white,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 4),
+                                      child: Text(
+                                        '377',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                              flex: 4,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 12),
+                                child: Card(
+                                  elevation: 12,
+                                  color: appAccentColor,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Center(
+                                      child: Text(
+                                        'Mentioned',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ))
+                        ],
                       )
                     ],
                   ),
