@@ -52,9 +52,11 @@
   </tr>
    <tr>
     <th>Watches</th>
+    <th>Japan Tour</th>
   </tr>
    <tr>
     <td><img src="https://user-images.githubusercontent.com/56064504/172050412-5d3bceb1-4946-40af-905b-a25d8c414b56.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/172079318-c59e983b-f7e9-4415-8949-81a296eb91ed.jpg" width=250 ></td>
   </tr>
 </table>
 
