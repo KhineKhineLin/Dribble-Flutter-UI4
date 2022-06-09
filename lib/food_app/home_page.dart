@@ -129,6 +129,8 @@ class _MainPageState extends State<MainPage> {
                                           alignment: Alignment.topCenter,
                                           child: CircleAvatar(
                                             radius: 16,
+                                            backgroundImage: NetworkImage(
+                                                'https://cdn.pixabay.com/photo/2019/02/11/20/20/woman-3990680_960_720.jpg'),
                                           ),
                                         ),
                                         SizedBox(
@@ -215,6 +217,8 @@ class _MainPageState extends State<MainPage> {
                                           alignment: Alignment.topCenter,
                                           child: CircleAvatar(
                                             radius: 16,
+                                            backgroundImage: NetworkImage(
+                                                'https://cdn.pixabay.com/photo/2017/02/24/07/45/woman-2094172_960_720.jpg'),
                                           ),
                                         ),
                                         SizedBox(
@@ -301,6 +305,8 @@ class _MainPageState extends State<MainPage> {
                                           alignment: Alignment.topCenter,
                                           child: CircleAvatar(
                                             radius: 16,
+                                            backgroundImage: NetworkImage(
+                                                'https://cdn.pixabay.com/photo/2017/12/22/14/42/girl-3033718_960_720.jpg'),
                                           ),
                                         ),
                                         SizedBox(
@@ -383,32 +389,323 @@ class _MainPageState extends State<MainPage> {
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          decoration: BoxDecoration(
+                              //color: Colors.red
+                              ),
+                          padding: EdgeInsets.only(bottom: 6, top: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_960_720.jpg'),
+                              ),
+                              Text(
+                                'Rose Rain',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '872 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
+                                    color: Colors.orangeAccent,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
+                                    color: Colors.orangeAccent,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
+                                    color: Colors.orangeAccent,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
+                                    color: Colors.orangeAccent,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          padding: EdgeInsets.only(top: 6, bottom: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2016/11/29/03/36/woman-1867093_960_720.jpg'),
+                              ),
+                              Text(
+                                'Khine Lin',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '871 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          padding: EdgeInsets.only(top: 6, bottom: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2015/06/12/21/58/child-807547_960_720.jpg'),
+                              ),
+                              Text(
+                                'Khine Lin',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '870 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          padding: EdgeInsets.only(top: 6, bottom: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2016/03/11/17/31/girl-1250679_960_720.jpg'),
+                              ),
+                              Text(
+                                'Khine Lin',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '869 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          padding: EdgeInsets.only(top: 6, bottom: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2015/09/09/06/57/child-931152_960_720.jpg'),
+                              ),
+                              Text(
+                                'Khine Lin',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '868 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.only(right: 16),
                           width: MediaQuery.of(context).size.width / 3.5,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          padding: EdgeInsets.only(top: 6, bottom: 6),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              CircleAvatar(
+                                radius: 42,
+                                backgroundImage: NetworkImage(
+                                    'https://cdn.pixabay.com/photo/2019/06/02/17/33/woman-4246954_960_720.jpg'),
+                              ),
+                              Text(
+                                'Khine Lin',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '123 Sold',
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.orangeAccent,
+                                    size: 18,
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
@@ -431,7 +728,218 @@ class _MainPageState extends State<MainPage> {
                   Container(
                     margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
                     height: MediaQuery.of(context).size.height / 7,
-                    child: Placeholder(),
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            flex: 3,
+                            child: CircleAvatar(
+                              radius: 32,
+                              backgroundImage: NetworkImage(
+                                  'https://cdn.pixabay.com/photo/2017/05/31/19/58/salad-2361411_960_720.jpg'),
+                            )),
+                        Expanded(
+                            flex: 8,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 16, top: 0, bottom: 1),
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Mix Salad'),
+                                  Text('30 Review'),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
+                        Expanded(
+                            flex: 2,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('3k'),
+                                Icon(
+                                  Icons.favorite,
+                                  color: Colors.red,
+                                )
+                              ],
+                            ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                    height: MediaQuery.of(context).size.height / 7,
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            flex: 3,
+                            child: CircleAvatar(
+                              radius: 32,
+                              backgroundImage: NetworkImage(
+                                  'https://cdn.pixabay.com/photo/2017/04/02/23/20/salad-2197151_960_720.jpg'),
+                            )),
+                        Expanded(
+                            flex: 8,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 16, top: 0, bottom: 1),
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Mix Salad'),
+                                  Text('31 Review'),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
+                        Expanded(
+                            flex: 2,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('1k'),
+                                Icon(
+                                  Icons.favorite,
+                                  color: Colors.red,
+                                )
+                              ],
+                            ))
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 16, right: 16, bottom: 16),
+                    height: MediaQuery.of(context).size.height / 7,
+                    padding: EdgeInsets.only(top: 16, bottom: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            flex: 3,
+                            child: CircleAvatar(
+                              radius: 32,
+                              backgroundImage: NetworkImage(
+                                  'https://cdn.pixabay.com/photo/2017/05/30/23/12/salad-2358532_960_720.jpg'),
+                            )),
+                        Expanded(
+                            flex: 8,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 16, top: 0, bottom: 1),
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Mix Salad'),
+                                  Text('32 Review'),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange,
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      ),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.orange[100],
+                                        size: 20,
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            )),
+                        Expanded(
+                            flex: 2,
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('2k'),
+                                Icon(
+                                  Icons.favorite,
+                                  color: Colors.red,
+                                )
+                              ],
+                            ))
+                      ],
+                    ),
                   )
                 ],
               )
