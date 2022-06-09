@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_text/circular_text/model.dart';
 import 'package:flutter_circular_text/circular_text/widget.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Model extends StatelessWidget {
   const Model({Key? key}) : super(key: key);
@@ -79,6 +80,28 @@ class _ModelMainPageState extends State<ModelMainPage>
                     Stack(
                       children: [
                         Positioned(
+                            right: 48,
+                            left: 48,
+                            top: 32,
+                            child: Container(
+                              height: 320,
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          'https://cdn.pixabay.com/photo/2017/08/07/16/39/girl-2605526_960_720.jpg'),
+                                      fit: BoxFit.cover)),
+                            )),
+                        Positioned(
+                            top: 0,
+                            left: 32,
+                            child: Text('LAYLA ONE',
+                                style: GoogleFonts.notoSans(
+                                    fontSize: 42,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xff643635),
+                                    letterSpacing: 5))),
+                        Positioned(
                             right: 0,
                             top: 100,
                             bottom: 100,
@@ -88,15 +111,138 @@ class _ModelMainPageState extends State<ModelMainPage>
                                   color: Colors.orange,
                                   border: Border(
                                       top: BorderSide(
-                                          color: Colors.white, width: 24),
+                                          color: Colors.white, width: 20),
                                       left: BorderSide(
-                                          color: Colors.white, width: 24),
+                                          color: Colors.white, width: 20),
                                       bottom: BorderSide(
-                                          color: Colors.white, width: 24)),
+                                          color: Colors.white, width: 20)),
                                   image: DecorationImage(
                                       image: NetworkImage(
                                           'https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_960_720.jpg'),
                                       fit: BoxFit.none)),
+                            )),
+                        Positioned(
+                            left: 16,
+                            bottom: 16,
+                            child: Container(
+                              height: 250,
+                              width: MediaQuery.of(context).size.width - 160,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'AGENCY',
+                                    style: GoogleFonts.notoSans(
+                                        fontSize: 20,
+                                        letterSpacing: 4,
+                                        color: Color(0xff643635)),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 28),
+                                    child: Text(
+                                      'Image Board',
+                                      style: GoogleFonts.shadowsIntoLight(
+                                          fontSize: 30,
+                                          letterSpacing: 5,
+                                          color: Color(0xff643635),
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 24, left: 16, right: 16),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          'Height',
+                                          style: TextStyle(
+                                              color: Color(0xff643635),
+                                              fontSize: 18),
+                                        ),
+                                        Container(
+                                          height: 1,
+                                          width: 42,
+                                          color: Color(0xff643635),
+                                        ),
+                                        Text(
+                                          '176 cm',
+                                          style: TextStyle(
+                                              color: Color(0xff643635),
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 24, left: 16, right: 16),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          'Hips',
+                                          style: TextStyle(
+                                              color: Color(0xff643635),
+                                              fontSize: 18),
+                                        ),
+                                        Container(
+                                          height: 1,
+                                          width: 42,
+                                          color: Color(0xff643635),
+                                        ),
+                                        Text(
+                                          '85 cm',
+                                          style: TextStyle(
+                                              color: Color(0xff643635),
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      top: 11,
+                                      left: 16,
+                                      right: 16,
+                                    ),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          'Shoe',
+                                          style: TextStyle(
+                                              color: Color(0xff643635),
+                                              fontSize: 8),
+                                        ),
+                                        Container(
+                                          height: 1,
+                                          width: 42,
+                                          color: Color(0xff643635),
+                                        ),
+                                        Text(
+                                          '38 eu',
+                                          style: TextStyle(
+                                              color: Color(0xff643634),
+                                              fontSize: 8,
+                                              fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ))
                       ],
                     ),
@@ -125,11 +271,11 @@ class _ModelMainPageState extends State<ModelMainPage>
                                   color: Colors.orange,
                                   border: Border(
                                       top: BorderSide(
-                                          color: Colors.white, width: 24),
+                                          color: Colors.white, width: 16),
                                       right: BorderSide(
-                                          color: Colors.white, width: 24),
+                                          color: Colors.white, width: 16),
                                       bottom: BorderSide(
-                                          color: Colors.white, width: 24)),
+                                          color: Colors.white, width: 16)),
                                   image: DecorationImage(
                                       image: NetworkImage(
                                           'https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_960_720.jpg'),
@@ -214,6 +360,18 @@ class _ModelMainPageState extends State<ModelMainPage>
                                     startAngle: 220)
                               ]),
                             )),
+                        Positioned(
+                            left: 16,
+                            bottom: 12,
+                            right: 0,
+                            child: Text(
+                              'Layla Ong, contestant in Asia\'s Next\nTop Model Season 5, standing at',
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w300,
+                                  wordSpacing: 1,
+                                  letterSpacing: 3),
+                            ))
                       ],
                     )
                   ],
