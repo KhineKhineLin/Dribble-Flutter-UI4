@@ -54,11 +54,13 @@
     <th>Watches</th>
     <th>Japan Tour</th>
     <th>Food</th>
+    <th>Model</th>
   </tr>
    <tr>
     <td><img src="https://user-images.githubusercontent.com/56064504/172050412-5d3bceb1-4946-40af-905b-a25d8c414b56.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/172079318-c59e983b-f7e9-4415-8949-81a296eb91ed.jpg" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/172893901-2b1fcba2-f727-46cb-8025-050f82206de3.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/172957332-75f9a125-9eb1-4eb9-a8d0-07d7d058602c.png" width=250 ></td>
   </tr>
 </table>
 
