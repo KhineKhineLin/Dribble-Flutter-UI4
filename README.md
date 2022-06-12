@@ -64,11 +64,13 @@
   </tr>
    <tr>
     <th colspan="3">Food Catering</th>
+    <th>Food Delivery</th>
   </tr>
    <tr>
     <td><img src="https://user-images.githubusercontent.com/56064504/173222204-5d39df33-52f8-425a-a4f2-2f03f771b1f1.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/173222206-efd43e5a-6054-4f41-b181-8720ed3e6ebf.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/173222877-e4d9f3f3-0996-4971-9c6b-98a9adf0766f.jpg" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173246153-02a4286c-73d5-4d50-a8c1-c7507125ac0a.png" width=250 ></td>
   </tr>
 </table>
 
