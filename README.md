@@ -62,6 +62,14 @@
     <td><img src="https://user-images.githubusercontent.com/56064504/172893901-2b1fcba2-f727-46cb-8025-050f82206de3.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/172957332-75f9a125-9eb1-4eb9-a8d0-07d7d058602c.png" width=250 ></td>
   </tr>
+   <tr>
+    <th colspan="3">Food Catering</th>
+  </tr>
+   <tr>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173222204-5d39df33-52f8-425a-a4f2-2f03f771b1f1.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173222206-efd43e5a-6054-4f41-b181-8720ed3e6ebf.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173222877-e4d9f3f3-0996-4971-9c6b-98a9adf0766f.jpg" width=250 ></td>
+  </tr>
 </table>
 
 </body>
