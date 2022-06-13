@@ -1,4 +1,5 @@
 import 'package:badges/badges.dart';
+import 'package:dribbble_flutter_ui4/food_receipts_app/food_info_page.dart';
 import 'package:flutter/material.dart';
 
 class FoodReceipts extends StatelessWidget {
@@ -99,7 +100,7 @@ class _FoodReceiptsMainPageState extends State<FoodReceiptsMainPage> {
                 ),
                 Container(
                   height: 280,
-                  decoration: BoxDecoration(color: Colors.yellow),
+                  decoration: BoxDecoration(),
                   child: Column(
                     children: [
                       Expanded(
@@ -110,20 +111,84 @@ class _FoodReceiptsMainPageState extends State<FoodReceiptsMainPage> {
                                   flex: 1,
                                   child: Column(
                                     children: [
-                                      Expanded(child: Placeholder()),
-                                      Expanded(child: Placeholder())
+                                      Expanded(
+                                          child: Container(
+                                        margin: const EdgeInsets.all(4),
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    'https://cdn.pixabay.com/photo/2017/07/16/12/07/beef-2509104_960_720.jpg'),
+                                                fit: BoxFit.cover)),
+                                      )),
+                                      Expanded(
+                                          child: Container(
+                                        margin: const EdgeInsets.all(4),
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    'https://cdn.pixabay.com/photo/2017/01/23/15/36/eat-2002918_960_720.jpg'),
+                                                fit: BoxFit.cover)),
+                                      ))
                                     ],
                                   )),
-                              Expanded(flex: 2, child: Placeholder())
+                              Expanded(
+                                  flex: 2,
+                                  child: InkWell(
+                                    onTap: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (_) => FoodInfoPage())),
+                                    child: Container(
+                                      margin: const EdgeInsets.all(4),
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(8),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  'https://cdn.pixabay.com/photo/2016/03/05/22/08/beef-1239187_960_720.jpg'),
+                                              fit: BoxFit.cover)),
+                                    ),
+                                  ))
                             ],
                           )),
                       Expanded(
                           flex: 1,
                           child: Row(
                             children: [
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder()),
-                              Expanded(child: Placeholder())
+                              Expanded(
+                                  child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            'https://cdn.pixabay.com/photo/2015/06/30/22/51/steak-826961_960_720.jpg'),
+                                        fit: BoxFit.cover)),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                margin: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            'https://cdn.pixabay.com/photo/2018/09/14/11/12/food-3676796_960_720.jpg'),
+                                        fit: BoxFit.cover)),
+                              )),
+                              Expanded(
+                                  child: Container(
+                                margin: EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            'https://cdn.pixabay.com/photo/2017/12/04/15/49/salmon-2997240_960_720.jpg'),
+                                        fit: BoxFit.cover)),
+                              ))
                             ],
                           ))
                     ],
@@ -143,6 +208,29 @@ class _FoodReceiptsMainPageState extends State<FoodReceiptsMainPage> {
                       'recommendations',
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 16.0),
+                      child: SizedBox(
+                        height: 100,
+                        child: Container(
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 100,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 100,
+                                  margin: EdgeInsets.only(right: 16),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              'https://cdn.pixabay.com/photo/2016/11/18/14/39/beans-1834984_960_720.jpg'),
+                                          fit: BoxFit.cover)),
+                                );
+                              }),
+                        ),
+                      ),
                     )
                   ],
                 )
