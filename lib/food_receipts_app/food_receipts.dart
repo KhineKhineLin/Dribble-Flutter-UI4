@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:dribbble_flutter_ui4/food_receipts_app/food_info_page.dart';
+import 'package:dribbble_flutter_ui4/food_receipts_app/start_page.dart';
 import 'package:flutter/material.dart';
 
 class FoodReceipts extends StatelessWidget {
@@ -9,7 +10,7 @@ class FoodReceipts extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FoodReceiptsMainPage(),
+      home: StartPage(),
     );
   }
 }
