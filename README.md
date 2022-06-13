@@ -72,6 +72,14 @@
     <td><img src="https://user-images.githubusercontent.com/56064504/173222877-e4d9f3f3-0996-4971-9c6b-98a9adf0766f.jpg" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/173246153-02a4286c-73d5-4d50-a8c1-c7507125ac0a.png" width=250 ></td>
   </tr>
+   <tr>
+    <th colspan="3">Food Receipts</th>
+  </tr>
+   <tr>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173317787-c47461e9-73f9-40b5-bf6a-5dced8596194.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173317804-1e1fec2d-3663-4826-9575-0d72ed322052.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/173317762-89399bd2-c071-4e57-ace9-bb14170d4747.png" width=250 ></td>
+  </tr>
 </table>
 
 </body>
