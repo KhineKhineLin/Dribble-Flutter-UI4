@@ -1,5 +1,8 @@
+
 import 'package:dribbble_flutter_ui4/fashion_store_app/first_page.dart';
 import 'package:flutter/material.dart';
+
+import 'second_page.dart';
 
 class FashionStore extends StatelessWidget {
   const FashionStore({Key? key}) : super(key: key);
@@ -28,10 +31,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
         scrollDirection: Axis.vertical,
         children: [
           FirstPage(),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            decoration: BoxDecoration(color: Colors.green),
-          )
+          SecondPage()
         ],
       ),
       bottomNavigationBar: BottomAppBar(
