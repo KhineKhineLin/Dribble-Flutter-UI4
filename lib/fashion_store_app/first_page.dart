@@ -1,3 +1,4 @@
+import 'package:dribbble_flutter_ui4/fashion_store_app/detail_page.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatefulWidget {
@@ -49,15 +50,22 @@ class _FirstPageState extends State<FirstPage> {
               )),
           Expanded(
               flex: 5,
-              child: Container(
-                margin: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                    color: Colors.brown,
-                    borderRadius: BorderRadius.circular(16),
-                    image: DecorationImage(
-                        image: NetworkImage(
-                            'https://cdn.pixabay.com/photo/2015/01/15/13/06/woman-600238_960_720.jpg'),
-                        fit: BoxFit.cover)),
+              child: Hero(
+                tag: 'home',
+                child: GestureDetector(
+                  onTap: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => ShopDetailPage())),
+                  child: Container(
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                        color: Colors.brown,
+                        borderRadius: BorderRadius.circular(16),
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                'https://cdn.pixabay.com/photo/2015/01/15/13/06/woman-600238_960_720.jpg'),
+                            fit: BoxFit.cover)),
+                  ),
+                ),
               )),
           Expanded(
               flex: 5,

@@ -64,7 +64,12 @@ class SecondPage extends StatelessWidget {
                               flex: 4,
                               child: Container(
                                 margin: EdgeInsets.only(bottom: 4),
-                                decoration: BoxDecoration(color: Colors.red),
+                                decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    image: DecorationImage(
+                                        image: NetworkImage(
+                                            'https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_960_720.jpg'),
+                                        fit: BoxFit.cover)),
                               )),
                           Expanded(
                               flex: 2,
@@ -77,7 +82,7 @@ class SecondPage extends StatelessWidget {
                       ),
                     );
                   }),
-            )
+            ),
           ],
         ),
       ),
