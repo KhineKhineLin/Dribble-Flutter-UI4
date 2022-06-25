@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ShopDetailPage extends StatefulWidget {
@@ -50,12 +49,16 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                                     )),
                                 Text(
                                   'SIXTH COLLECTIONS',
-                                  style: TextStyle(fontWeight: FontWeight.bold,
-                                  color: Colors.white),
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white),
                                 ),
                                 IconButton(
-                                    onPressed: () {}, icon: Icon(Icons.file_upload,
-                                    color: Colors.white,))
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.file_upload,
+                                      color: Colors.white,
+                                    ))
                               ],
                             ),
                           )
