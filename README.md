@@ -80,6 +80,13 @@
     <td><img src="https://user-images.githubusercontent.com/56064504/173317804-1e1fec2d-3663-4826-9575-0d72ed322052.png" width=250 ></td>
     <td><img src="https://user-images.githubusercontent.com/56064504/173317762-89399bd2-c071-4e57-ace9-bb14170d4747.png" width=250 ></td>
   </tr>
+   <tr>
+    <th colspan="2">Fashion Store</th>
+  </tr>
+   <tr>
+    <td><img src="https://user-images.githubusercontent.com/56064504/175765768-06f7213e-c6bc-44b4-9ad5-ac7412ba9172.png" width=250 ></td>
+    <td><img src="https://user-images.githubusercontent.com/56064504/175765747-f46c3304-10f3-4c1c-9c4a-44c5bed7b1d2.jpg" width=250 ></td>
+  </tr>
 </table>
 
 </body>
