@@ -195,11 +195,154 @@ class DailyMainPage extends StatelessWidget {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height / 2,
-                  child: Row(
-                    children: [
-                      Expanded(child: Placeholder()),
-                      Expanded(child: Placeholder())
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 24),
+                    child: Row(
+                      children: [
+                        Expanded(
+                            flex: 2,
+                            child: SingleChildScrollView(
+                              child: Column(
+                                children: [
+                                  const CircleAvatar(
+                                    radius: 10,
+                                    backgroundColor: Colors.greenAccent,
+                                    child: Icon(
+                                      Icons.check,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 100,
+                                    width: 3,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.greenAccent),
+                                  ),
+                                  const CircleAvatar(
+                                    radius: 10,
+                                    backgroundColor: Colors.greenAccent,
+                                    child: Icon(
+                                      Icons.check,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 100,
+                                    width: 3,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white),
+                                  ),
+                                  const CircleAvatar(
+                                    radius: 10,
+                                    backgroundColor: Colors.white,
+                                    child: Icon(
+                                      Icons.check,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 100,
+                                    width: 3,
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white),
+                                  ),
+                                  const CircleAvatar(
+                                    radius: 10,
+                                    backgroundColor: Colors.white,
+                                    child: Icon(
+                                      Icons.check,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )),
+                        Expanded(
+                            flex: 8,
+                            child: SingleChildScrollView(
+                              padding: EdgeInsets.zero,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 120,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          '8:00 am',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(top: 16.0),
+                                          child: Text(
+                                            'Meditate for 10 mins with Calm app before breakfast.',
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 120,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          '10:15 am',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(top: 16.0),
+                                          child: Text(
+                                            'Team meeting on research deck for the X project due this Friday',
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 120,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: const [
+                                        Text(
+                                          '2:00 pm',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(top: 16.0),
+                                          child: Text(
+                                            'Send reminder to team about the UI',
+                                            style:
+                                                TextStyle(color: Colors.white),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ))
+                      ],
+                    ),
                   ),
                 )
               ],
