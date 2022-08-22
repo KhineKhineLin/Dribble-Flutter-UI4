@@ -43,6 +43,7 @@ dependencies:
   sliding_up_panel: ^2.0.0+1
   local_auth: ^2.1.0
   sleek_circular_slider: ^2.0.1
+  calendar_strip: ^1.0.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
